@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LimpaTudo - Limpeza Profissional em Lisboa</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo LimpaTudo">       
+    </div>
+
+    <!-- Botão hambúrguer -->
+    <div class="menu-toggle" id="menuToggle">
+        ☰
+    </div>
+
+    <nav id="navMenu">
+        <a href="#servicos">Serviços</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Cansado da Sujeira Acumulada? <br> Tenha Sua Casa em Lisboa Impecável Sem Esforço!</h2>
+      <p>Com LimpaTudo, profissionais experientes limpam tudo – de apartamentos a escritórios – enquanto você aproveita o tempo livre. Orçamento grátis em minutos!</p>
+      <button class="cta"
+        onclick="openWhatsApp('Olá! Quero agendar uma limpeza em Lisboa. Pode enviar um orçamento?')">
+         <img src="img/whatsapp.png" alt="WhatsApp"> Agende no WhatsApp Agora
+      </button>
+    </div>
+    <div class="hero-img">
+      <img src="img/hero.jpg" alt="Casa impecável em Lisboa ao pôr do sol">
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="services">
+    <h3>Nossos Serviços</h3>
+    <div class="service-cards">
+      <div class="service-card">
+        <img src="img/servico-residencial.jpg" alt="Limpeza Residencial">
+        <h4>Limpeza Residencial</h4>
+        <p>Limpeza de manutenção regular para apartamentos e moradias em Lisboa.</p>
+      </div>
+      <div class="service-card">
+        <img src="img/servico-empresarial.jpg" alt="Limpeza Empresarial">
+        <h4>Limpeza Empresarial</h4>
+        <p>Ambientes de trabalho limpos e organizados para sua equipa render mais.</p>
+      </div>
+      <div class="service-card">
+        <img src="img/servico-pos-obra.jpg" alt="Limpeza Pós-Obra">
+        <h4>Limpeza Pós-Obra</h4>
+        <p>Remoção de poeira e resíduos após obras ou remodelações. Tudo pronto para uso.</p>
+      </div>
+      <div class="service-card">
+        <img src="img/servico-eco.jpg" alt="Limpeza Profunda">
+        <h4>Limpeza Profunda</h4>
+        <p>É o serviço ideal para quem quer renovar o ambiente, eliminar sujeiras acumuladas e garantir um lar saudável e impecável.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORYTELLING -->
+  <section class="story">
+    <div class="story-img">
+      <img src="img/antes-depois.jpg" alt="Antes e depois da limpeza em cozinha">
+    </div>
+    <div class="story-text">
+      <p>Imagine: chega em casa após um dia caótico, trânsito, prazos e a lista não acaba. <br> <b> A pilha de louça e a poeira só aumentam o stress.</b></p>
+      <p>Com <strong>LimpaTudo</strong>, transformamos casas comuns em oásis de paz — <b> técnicas rápidas que deixam tudo a brilhar.</b> <br> Não é só limpeza: é liberdade para viver!</p>
+      <button class="btn-whatsapp"
+        onclick="openWhatsApp('Olá! quero reservar uma vaga esta semana.')">
+       <img src="img/whatsapp.png" alt="WhatsApp"> Reservar no WhatsApp
+      </button>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios" class="benefits">
+    <h3>Benefícios</h3>
+    <ul>
+      <li>✅ Mais Tempo Livre — ganhe momentos com quem ama.</li>
+      <li>✅ Casa Saudável — menos poeira e alergénios.</li>
+      <li>✅ Paz de Espírito — limpeza profunda que dura.</li>
+    </ul>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="testimonials">
+    <h3>O que dizem nossos clientes</h3>
+    <div class="testimonial-cards">
+      <div class="card">
+        <p>"LimpaTudo mudou minha rotina! Minha casa em Alfama está sempre perfeita."</p>
+        <span>- Ana S.</span>
+      </div>
+      <div class="card">
+        <p>"Equipe pontual e detalhista. Em Benfica, limparam tudo em 2h — incrível!"</p>
+        <span>- João R.</span>
+      </div>
+      <div class="card">
+        <p>"Ótimo custo-benefício. Meu escritório no Parque das Nações ficou impecável!"</p>
+        <span>- Maria L.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO (ENVIA PARA WHATSAPP) -->
+  <section id="contato" class="contact">
+    <p class="contact-sub">Respondemos em minutos no WhatsApp.</p>
+    <form id="leadForm">
+      <input id="nome" type="text" placeholder="Nome" required>
+      <input id="zona" type="text" placeholder="Bairro/Zona (ex.: Alfama, Benfica)" required>
+      <select id="tipo" required>
+        <option value="">Tipo de Limpeza</option>
+        <option value="Residencial">Residencial</option>
+        <option value="Empresarial">Empresarial</option>
+        <option value="Pós-Obra">Pós-Obra</option>
+        <option value="Profunda">Profunda</option>
+      </select>
+      <button type="submit">Enviar pelo WhatsApp</button>
+    </form>
+
+    <div class="contact-alt">
+      <p>Prefere conversar agora?</p>
+      <a class="btn-whatsapp"
+         href="#"
+         onclick="openWhatsApp('Olá! Quero um orçamento rápido de limpeza.'); return false;">
+          <img src="img/whatsapp.png" alt="WhatsApp"> Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 LimpaTudo - Lisboa</p>
+    <p>
+      Fale no WhatsApp:
+      <a class="footer-wa" href="#" onclick="openWhatsApp('Olá! Preciso de ajuda com uma limpeza.'); return false;">
+        +351 929219939
+      </a>
+    </p>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="#"
+     class="whatsapp-float"
+     aria-label="Abrir WhatsApp"
+     onclick="openWhatsApp('Olá! Quero agendar uma limpeza com a LimpaTudo.'); return false;">
+     <img src="img/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
