@@ -53,7 +53,6 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  overflow: hidden;
 }
 .cta:hover, .btn-whatsapp:hover {
   transform: scale(1.05);
@@ -112,7 +111,7 @@ form input, form select, form button {
   padding: .85rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem;
 }
 form button { background: var(--verde); color: var(--branco); border: none; cursor: pointer; }
-.contact-alt { margin-top: 1rem; }
+.contact-alt { margin-top: 1rem; overflow: hidden; }
 .contact-alt p { margin-bottom: .5rem; }
 
 /* FOOTER */
