@@ -53,6 +53,7 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  overflow: hidden;
 }
 .cta:hover, .btn-whatsapp:hover {
   transform: scale(1.05);
