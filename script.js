@@ -1,6 +1,6 @@
 // Função global para abrir WhatsApp com mensagem personalizada
 function openWhatsApp(msg) {
-    var numero = '351911545582';
+    var numero = '351911547964';
     var url = 'https://wa.me/' + numero + '?text=' + encodeURIComponent(msg);
     window.open(url, '_blank');
 }
